@@ -1,0 +1,49 @@
+\documentclass[11pt,
+			oneside,
+			noonlinecaption]{scrartcl}
+%-----------------------------------------------------------------------
+%PACKAGES            
+%-----------------------------------------------------------------------
+\include{packages}
+
+\newenvironment{tabular9}{%
+  \fontsize{9}{10}\selectfont\tabular
+}{%
+  \endtabular
+}
+\newenvironment{tabular7}{%
+  \fontsize{9}{11}\selectfont\tabular
+}{%
+  \endtabular
+}
+
+
+
+%layout
+
+\cfoot{\today -- \texttime}
+%clock
+\usepackage{clock}
+
+%-----------------------------------------------------------------------
+%DOCUMENT            
+%-----------------------------------------------------------------------
+\title{Arbeitspaket AP\,5: Analyse der Einflusses von Spektralinformationen auf die
+maßstabsspezifische Prognosegüte der Bodenparameter Humusgehalt und Bodenart}
+\author{Dr. Markus Möller}
+\publishers{\footnotesize TERRASYS geodatenanalyse (\url{https:\\terrasys.github.io}) im Auftrag des Deutschen Zentrums für Luft- und Raumfahrt (DLR)}
+\date{\footnotesize Halle, \today}
+\subject{\href{https://flf.julius-kuehn.de/soil-de.html}{  SOIL-DE -- Entwicklung von Indikatoren zur Bewertung der Ertragsfähigkeit, Nutzungsintensität und Vulnerabilität landwirtschaftlich genutzter Böden in Deutschland}}
+\titlehead{Zusammenfassung der Arbeiten im Berichtszeitraum 7.11.2018 bis 31.12.2019}
+
+\begin{document}
+\tracingall
+%\include{chapter/title}
+
+%Inhaltsverzeichnis
+%\tableofcontents
+%\listoffigures     % here, if applicable.
+%\listoftables 
+\include{chapter/text}
+
+\end{document}
